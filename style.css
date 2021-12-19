@@ -1,0 +1,134 @@
+
+:root{
+ --heelo-fgfg:15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+img {
+    max-width: 100%;
+}
+
+
+.container {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  width: 450px;
+ 
+ border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 3px 3px 4px 3px #d6e1ff;
+}
+ 
+.container  .info {
+    padding: 0 50px 50px;
+    text-align: center;
+
+}
+.container  .info h2{
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.container  .info> p{
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+    color: hsl(223, 47%, 23%);
+}
+.container .box  {
+    background-color: hsl(225, 100%, 98%);
+    padding: 10px;
+    align-items: center;
+ display: flex;
+ justify-content: space-between;
+ margin-top: 25px;
+ border-radius: 6px;
+}
+.container .box .txt {
+    margin-right: 20px;
+}
+.container .box h3{
+    font-size: 18px;
+}
+.container .box p{
+    margin: 5px;
+    font-size: 16px;
+     border-radius: 10px;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: bold;
+    color:hsl(223deg 43% 23% / 73%);
+}
+.container .box a {
+    font-weight: bold;
+    color: hsl(245, 75%, 52%);
+}
+.container .info .son input[type=submit]{
+   
+    margin: 20px  0  15px 0 ;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 1px 16px 20px 0px hsl(245deg 75% 52% / 20%);
+    transition: 0.5s;
+}
+.container .info .son input[type=submit]:hover{
+    background-color: hsl(223, 47%, 23%);
+    
+}
+.container .info .son a {
+    font-weight: bold;
+    font-size: 18px;
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+.container .info .son a:hover{
+    color: hsl(245, 75%, 52%);;
+
+}
+@media (max-width:425px){
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+    .container{
+        max-width: 80%;
+    }
+    .container .info {
+        padding: 10px 20px 30px ;
+    }
+}
